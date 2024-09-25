@@ -13,6 +13,7 @@
     "moduleDetection": "force",
     "jsx": "react-jsx",
     "emitDeclarationOnly": true,
+
     "declaration": true,
     "declarationMap": true,
     "declarationDir": "dist",
@@ -21,7 +22,8 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "dist"
   },
   "include": ["src"],
   "exclude": ["**/*.stories.*"]
