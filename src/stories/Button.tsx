@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./button.css";
 
 export type ButtonType = "primary" | "secondary";
