@@ -17,40 +17,31 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const style = [];
-  style.push("transition");
+  style.push("storybook-button");
 
   switch (type) {
     case "primary":
-      style.push("bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700");
+      style.push("storybook-button--primary");
       break;
     case "secondary":
-      style.push(
-        "bg-white text-black border hover:bg-neutral-100 active:bg-neutral-300"
-      );
+      style.push("storybook-button--secondary");
       break;
   }
 
   switch (size) {
     case "small":
-      style.push("text-sm px-2 py-1 rounded-md");
+      style.push("storybook-button--small");
       break;
     case "medium":
-      style.push("text-base px-2 py-1 rounded-md");
+      style.push("storybook-button--medium");
       break;
     case "large":
-      style.push("text-lg px-2 py-1 rounded-md");
+      style.push("storybook-button--large");
       break;
   }
 
-  <div className="text-"></div>;
-
   return (
-    <button
-      type="button"
-      className={style.join(" ")}
-      //"   transition"
-      {...props}
-    >
+    <button type="button" className={style.join(" ")} {...props}>
       {label}
     </button>
   );

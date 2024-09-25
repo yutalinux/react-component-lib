@@ -1,0 +1,23 @@
+.storybook-button {
+  @apply px-2 py-1 rounded-md;
+}
+
+.storybook-button--primary {
+  @apply bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700;
+}
+
+.storybook-button--secondary {
+  @apply bg-white text-black border hover:bg-neutral-100 active:bg-neutral-300;
+}
+
+.storybook-button--small {
+  @apply text-sm;
+}
+
+.storybook-button--medium {
+  @apply text-base;
+}
+
+.storybook-button--large {
+  @apply text-lg;
+}
