@@ -1,6 +1,5 @@
 {
   "name": "react-component-lib",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "main": "./dist/index.umd.cjs",
@@ -12,6 +11,9 @@
       "import": "./dist/index.js",
       "require": "./dist/index.umd.cjs"
     }
+  },
+  "publishConfig": {
+    "@yutalinux:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "dev": "vite",
