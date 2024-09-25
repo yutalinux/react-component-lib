@@ -1,6 +1,9 @@
 {
   "name": "@yutalinux/react-component-lib",
   "version": "0.0.1",
+  "author": {
+    "name": "yutalinux"
+  },
   "type": "module",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
