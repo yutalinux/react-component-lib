@@ -1,4 +1,5 @@
 import "./button.css";
+import "../index.css";
 
 export type ButtonType = "primary" | "secondary";
 export type ButtonSize = "small" | "medium" | "large";
@@ -10,33 +11,33 @@ export interface ButtonProps {
   onClick?: () => void;
 }
 
-export const Button = ({
+export function Button({
   type = "primary",
   size = "medium",
   label,
   ...props
-}: ButtonProps) => {
+}: ButtonProps) {
   const style = [];
-  style.push("storybook-button");
+  style.push("button");
 
   switch (type) {
     case "primary":
-      style.push("storybook-button--primary");
+      style.push("button--primary");
       break;
     case "secondary":
-      style.push("storybook-button--secondary");
+      style.push("button--secondary");
       break;
   }
 
   switch (size) {
     case "small":
-      style.push("storybook-button--small");
+      style.push("button--small");
       break;
     case "medium":
-      style.push("storybook-button--medium");
+      style.push("button--medium");
       break;
     case "large":
-      style.push("storybook-button--large");
+      style.push("button--large");
       break;
   }
 
@@ -45,4 +46,4 @@ export const Button = ({
       {label}
     </button>
   );
-};
+}

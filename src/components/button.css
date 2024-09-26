@@ -1,23 +1,23 @@
-.storybook-button {
+.button {
   @apply px-2 py-1 rounded-md;
 }
 
-.storybook-button--primary {
+.button--primary {
   @apply bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700;
 }
 
-.storybook-button--secondary {
-  @apply bg-white text-black border hover:bg-neutral-100 active:bg-neutral-300;
+.button--secondary {
+  @apply bg-white text-black border border-neutral-300 hover:bg-neutral-100 active:bg-neutral-200;
 }
 
-.storybook-button--small {
+.button--small {
   @apply text-sm;
 }
 
-.storybook-button--medium {
+.button--medium {
   @apply text-base;
 }
 
-.storybook-button--large {
+.button--large {
   @apply text-lg;
 }
