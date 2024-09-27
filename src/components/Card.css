@@ -1,0 +1,3 @@
+.card {
+  @apply bg-white text-black border p-2 rounded-md min-h-32;
+}
