@@ -1,5 +1,4 @@
-import "./button.css";
-import "../index.css";
+import "./Button.css";
 
 export type ButtonType = "primary" | "secondary";
 export type ButtonSize = "small" | "medium" | "large";
