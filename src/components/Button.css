@@ -3,11 +3,11 @@
 }
 
 .button--primary {
-  @apply bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700;
+  @apply bg-blue-800 text-white hover:bg-blue-700;
 }
 
 .button--secondary {
-  @apply bg-white text-black border border-neutral-300 hover:bg-neutral-100 active:bg-neutral-200;
+  @apply bg-neutral-900 text-white border-2 box-border border-neutral-800  hover:bg-neutral-800;
 }
 
 .button--small {
