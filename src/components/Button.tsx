@@ -17,28 +17,10 @@ export function Button({
   ...props
 }: ButtonProps) {
   const style = [];
+
   style.push("button");
-
-  switch (type) {
-    case "primary":
-      style.push("button--primary");
-      break;
-    case "secondary":
-      style.push("button--secondary");
-      break;
-  }
-
-  switch (size) {
-    case "small":
-      style.push("button--small");
-      break;
-    case "medium":
-      style.push("button--medium");
-      break;
-    case "large":
-      style.push("button--large");
-      break;
-  }
+  style.push("button--" + type);
+  style.push("button--" + size);
 
   return (
     <button type="button" className={style.join(" ")} {...props}>
